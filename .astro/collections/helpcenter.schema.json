@@ -1,0 +1,38 @@
+{
+  "$ref": "#/definitions/helpcenter",
+  "definitions": {
+    "helpcenter": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "alt"
+          ],
+          "additionalProperties": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "category",
+        "icon"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

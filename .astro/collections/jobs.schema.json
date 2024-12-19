@@ -1,0 +1,41 @@
+{
+  "$ref": "#/definitions/jobs",
+  "definitions": {
+    "jobs": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "applyURL": {
+          "type": "string"
+        },
+        "referURL": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "company",
+        "location",
+        "type",
+        "position",
+        "applyURL",
+        "referURL"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
